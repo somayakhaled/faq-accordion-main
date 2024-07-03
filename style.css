@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/images/background-pattern-desktop.svg) no-repeat;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: hsl(292, 42%, 14%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  top: 40px;
+  width: 550px;
+  background-color: white;
+  border-radius: 8px;
+  justify-content: center;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.container .title {
+  font-weight: 700;
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+.container .title .star {
+  width: 25px;
+  margin-right: 20px;
+}
+.container .question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+}
+.container .question:hover {
+  cursor: pointer;
+  color: rgb(173, 1, 173);
+}
+.container .question .plus {
+  margin-left: 30px;
+}
+.container .hidden {
+  display: none;
+}
+.container .answer1 {
+  color: hsl(292, 16%, 49%);
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.container hr {
+  border: 1px solid rgb(236, 236, 236);
+}
+
+@media (max-width: 565px) {
+  .container {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+  }
+}/*# sourceMappingURL=style.css.map */
